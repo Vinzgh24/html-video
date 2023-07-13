@@ -3,19 +3,19 @@
 <body>
 
 <video id="myVideo" width="320" height="240" poster="https://i.jeded.com/i/guardians-of-the-galaxy-volume-3.254447.jpg" controls>
-  <source src="https://ryooindex.my.id/1:/Guardians.of.the.Galaxy.Vol.3.2023.INTERNAL.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA/Guardians.of.the.Galaxy.Vol.3.2023.INTERNAL.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA.mkv" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-  
-  <track id="myTrack" src="sub.vtt" kind="subtitles" srclang="en" label="English">
+  <source src="https://ryooindex.my.id/1:/Guardians.of.the.Galaxy.Vol.3.2023.INTERNAL.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA/Guardians.of.the.Galaxy.Vol.3.2023.INTERNAL.1080p.10bit.WEBRip.6CH.x265.HEVC-PSA.mkv" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  
+  <track id="subtitlesTrack" src="sub.vtt" kind="subtitles" srclang="en" label="English">
 </video>
 
 <script>
   var video = document.getElementById("myVideo");
-  var track = document.getElementById("myTrack");
+  var subtitlesTrack = document.getElementById("subtitlesTrack");
 
   video.addEventListener("play", function() {
-    track.mode = "showing";
+    subtitlesTrack.mode = "showing";
   });
 </script>
 
